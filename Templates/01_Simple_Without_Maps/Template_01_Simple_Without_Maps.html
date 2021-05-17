@@ -1,0 +1,96 @@
+<!-- 
+    Vorlage von Moritz Joekel (MrzJkl)
+    GitHub: https://github.com/MrzJkl/DispatchTemplates 
+    Veroeffentlicht unter Creative Commons Zero v1.0 Universal
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Alarmausdruck</title>
+        <style>
+            body {
+                size: "210mm";
+                margin: 0.5cm;
+                font-family: Arial;
+                font-size: 14pt;
+            }
+            table {
+                width: 100%;
+                height: 100%;
+                border-spacing: 0;
+                border-collapse: separate;
+                border: 1px solid black;
+            }
+            td {
+                padding: 10px;
+                border: 1px solid black;
+                vertical-align: top;
+            }
+            .footer {
+                text-align: center;
+                font-size: 10pt;
+            }
+            .stichwort {
+                font-size: 18pt;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <table>
+                <tr>
+                    <td class="stichwort">
+                        %DATUM% - %UHRZEIT% <br />
+                        %EINSATZSTICHWORT% <br />
+                        %SACHVERHALT%
+                    </td>
+                </tr>
+                <tr>
+                    <td class="stichwort">
+                        %ADRESSE% <br />
+                        %OBJEKT%
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Stichwort: </b> %EINSATZSTICHWORT% <br />
+                        <b>Meldebild: </b> %SACHVERHALT% <br />
+                        <b>Adresse: </b> %ADRESSE% <br />
+                        <br />
+                        <br />
+                        %ZUSATZFELD1%<br /><br />
+                        %ZUSATZFELD2%<br /><br />
+                        %ZUSATZFELD3%
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b> Alarm- und Ausr&uuml;ckeordnung: </b><br /><br />
+                        %FHZ1%<br />
+                        %FHZ2%<br />
+                        %FHZ3%<br />
+                        %FHZ4%<br />
+                        %FHZ5%<br />
+                        %FHZ6%<br />
+                        %FHZ7%<br />
+                        %FHZ8%<br />
+                        %FHZ9%<br />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Verkehrsbehinderungen:</b> <br /><br />
+                        %VERKEHRSBEHINDERUNGEN%
+                    </td>
+                </tr>
+                <tr>
+                    <td class="footer">
+                        <b>Alarmdruck - Nur f&uuml;r Dienstgebrauch!</b>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
